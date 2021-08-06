@@ -1,7 +1,7 @@
 import svg1Path from "../../assets/images/svg-1.svg";
 import svg2Path from "../../assets/images/svg-2.svg";
 import svg3Path from "../../assets/images/svg-3.svg";
-import svg4Path from "../../assets/images/svg-4.svg";
+// import svg4Path from "../../assets/images/svg-4.svg";
 
 const homeObjOne = {
   id: "about",
@@ -54,8 +54,8 @@ const homeObjThree = {
   imgStart: false,
   img: svg3Path,
   alt: "chart",
-  primary: true,
-  dark: true,
+  primary: false,
+  dark: false,
   dark2: false,
   darkText: true,
 };

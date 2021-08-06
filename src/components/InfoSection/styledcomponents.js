@@ -10,6 +10,7 @@ const InfoContainer = styled.div`
 
 const InfoWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   z-index: 1;
   height: 860px;

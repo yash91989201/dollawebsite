@@ -20,7 +20,7 @@ const HeroSection = ({ mainHero }) => {
   return (
     <HeroContainer>
       <HeroBg>
-        <VideoBg autoPlay muted src={video} type="video/mp4" />
+        <VideoBg autoPlay loop muted src={video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
         <HeroH1>Virtual Banking Made Easy.</HeroH1>
