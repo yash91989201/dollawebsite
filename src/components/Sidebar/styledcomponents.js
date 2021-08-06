@@ -12,11 +12,11 @@ const SidebarContainer = styled.aside`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  top: 0;
-  right: 0;
-  transition: 0.3s ease-in-out;
+  bottom: 0;
+  left: 0;
+  transition: 250ms ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0%")};
-  right: ${({ isOpen }) => (isOpen ? "0" : "100%")};
+  bottom: ${({ isOpen }) => (isOpen ? "0" : "100%")};
 `;
 
 const Icon = styled.div`

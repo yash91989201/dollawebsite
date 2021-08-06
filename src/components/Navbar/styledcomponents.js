@@ -6,7 +6,7 @@ import { FaBars } from "react-icons/fa";
 const Nav = styled.nav`
   background: #000;
   height: 80px;
-  /* margin-top: -80px; */
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,6 +38,7 @@ const NavLogo = styled(LinkRouter)`
   align-items: center;
   margin-left: 24px;
   font-weight: bold;
+  font-size: 30px;
   text-decoration: none;
 `;
 
@@ -65,13 +66,16 @@ const NavMenu = styled.ul`
   list-style: none;
   text-align: center;
   margin-right: 22px;
+
   @media screen and (max-width: 768px) {
     display: none;
   }
 `;
 
 const NavItem = styled.li`
+  font-size: 18px;
   height: 80px;
+  margin: 0 0.75rem 0 0.75rem;
 `;
 
 const NavLinks = styled(LinkScroll)`
@@ -99,9 +103,9 @@ const NavBtnLink = styled(LinkRouter)`
   border-radius: 50px;
   background: #01bf71;
   white-space: nowrap;
-  padding: 10px 22px;
+  padding: 8px 24px;
   color: #010606;
-  font-size: 16px;
+  font-size: 18px;
   outline: none;
   border: none;
   cursor: pointer;
