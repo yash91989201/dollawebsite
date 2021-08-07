@@ -18,7 +18,7 @@ const HeroSection = ({ mainHero }) => {
   const [btnHover, setBtnHover] = useState(false);
   const onHover = () => setBtnHover(!btnHover);
   return (
-    <HeroContainer>
+    <HeroContainer id="home">
       <HeroBg>
         <VideoBg autoPlay loop muted src={video} type="video/mp4" />
       </HeroBg>
@@ -35,6 +35,11 @@ const HeroSection = ({ mainHero }) => {
             dark="true"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
           >
             Get Started{btnHover ? <AngleRight /> : <ArrowRight />}
           </Button>

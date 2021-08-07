@@ -14,18 +14,21 @@ import {
 } from "./styledcomponents";
 
 const Navbar = ({ toggle }) => {
-  const [scrollNav, setScrollNav] = useState(false);
+  const [scrollNav, setScrollNav] = useState(true);
   const changeNav = () => {
     window.scrollY >= 80 ? setScrollNav(true) : setScrollNav(false);
   };
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
   }, []);
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
   return (
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="/" onClick={changeNav}>
+          <NavLogo to="/" onClick={toggleHome}>
             dolla
           </NavLogo>
           <HamburgerMenu onClick={toggle}>

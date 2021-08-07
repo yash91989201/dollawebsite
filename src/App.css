@@ -5,14 +5,14 @@
   font-family: "Encode Sans Expanded", sans-serif;
 }
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   html {
     font-size: 125%;
   }
-}
+} */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   html {
     font-size: 93.75%;
   }
-}
+} */

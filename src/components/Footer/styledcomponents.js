@@ -112,14 +112,18 @@ const SocialIconLink = styled.div`
 
 const InstagramIcon = styled(FaInstagram)`
   color: #fff;
+  cursor: pointer;
 `;
 const FacebookIcon = styled(FaFacebook)`
+  cursor: pointer;
   color: #fff;
 `;
 const TwitterIcon = styled(FaTwitter)`
+  cursor: pointer;
   color: #fff;
 `;
 const YoutubeIcon = styled(FaYoutube)`
+  cursor: pointer;
   color: #fff;
 `;
 

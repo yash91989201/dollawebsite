@@ -1,10 +1,12 @@
 import React from "react";
-
+import ScrollToTop from "../components/ScrollToTop";
+import { SignIn as SignInComponent } from "../components/SignIn/index";
 const SignIn = () => {
   return (
-    <div>
-      <h1>SignIn Page</h1>
-    </div>
+    <>
+      <ScrollToTop />
+      <SignInComponent />
+    </>
   );
 };
 

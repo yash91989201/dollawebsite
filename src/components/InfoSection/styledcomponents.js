@@ -22,26 +22,21 @@ const InfoWrapper = styled.div`
 `;
 
 const InfoRow = styled.div`
-  display: grid;
-  grid-auto-columns: minmax(auto, 1fr);
-  align-items: center;
-  grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col2 col1'` : `'col1 col2'`};
-  @media screen and(max-width:768px) {
-    grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+  display: flex;
+  flex-direction: ${({ imgStart }) => (imgStart ? "row-reverse" : "row")};
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+    align-items: space-between;
   }
 `;
 
 const Column1 = styled.div`
-  margin-bottom: 15px;
-  padding: 0 15px;
-  grid-area: col1;
+  margin-bottom: 10px;
+  padding: 0 10px;
 `;
 const Column2 = styled.div`
-  margin-bottom: 15px;
-  padding: 0 15px;
-  grid-area: col2;
+  margin-bottom: 10px;
+  padding: 0 10px;
 `;
 
 const TextWrapper = styled.div`
@@ -91,7 +86,7 @@ const ImgWrap = styled.div`
 
 const Img = styled.img`
   width: 100%;
-  margin: 0 0 10px;
+  margin: 0 0 50px;
   padding-right: 0;
 `;
 

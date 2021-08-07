@@ -4,7 +4,7 @@ import { Link as LinkScroll } from "react-scroll"; //FOR LINKING WIHIN SINGLE PA
 import { FaBars } from "react-icons/fa";
 
 const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
+  background: ${({ scrollNav }) => (scrollNav ? "#000" : "rgb(0,0,0)")};
   height: 80px;
   margin-top: -80px;
   display: flex;
